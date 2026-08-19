@@ -1,0 +1,17 @@
+{
+  "name": "Clarkson Elementary PTO",
+  "short_name": "Clarkson PTO",
+  "description": "Events, volunteering, resources, and member tools for Clarkson Elementary PTO.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#d91f26",
+  "icons": [
+    {
+      "src": "/redhawk.png",
+      "sizes": "272x186",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
