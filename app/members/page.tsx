@@ -1,12 +1,16 @@
 /* eslint-disable @next/next/no-img-element, @next/next/no-html-link-for-pages */
 import type { Metadata } from "next";
+import { BAND_URL as bandUrl } from "../lib/site";
 
 export const metadata: Metadata = {
   title: "Member Area",
   description: "Clarkson Elementary PTO member dashboard.",
+  robots: { index: false, follow: false },
+  openGraph: {
+    title: "Member Area | Clarkson Elementary PTO",
+    description: "Clarkson Elementary PTO member dashboard.",
+  },
 };
-
-const bandUrl = "https://band.us/n/a4abb3e0v4Hbd";
 
 export default function MemberArea() {
   return (
@@ -98,7 +102,7 @@ export default function MemberArea() {
             <article className="dashboard-card">
               <div className="dashboard-card-heading"><div><h2>Quick links</h2><p>Go straight to the tools families use most.</p></div></div>
               <div className="task-list">
-                <div className="task-row"><div><h3>BAND community</h3><p>Announcements and conversations</p></div><span>Open ↗</span></div>
+                <a className="task-row" href={bandUrl} target="_blank" rel="noreferrer"><div><h3>BAND community</h3><p>Announcements and conversations</p></div><span>Open ↗</span></a>
                 <div className="task-row"><div><h3>Volunteer signup</h3><p>Current opportunities</p></div><span>Coming soon</span></div>
                 <div className="task-row"><div><h3>Spirit wear</h3><p>Redhawk shop</p></div><span>Coming soon</span></div>
               </div>
